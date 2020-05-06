@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>itunes.clones</title>
+
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width">
+	<style type="text/css">
+		body{
+			background-color: white;
+			font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+		}
+
+		img{
+			width: 16px;
+		}
+		#img-search{
+			width: 25px;
+		}
+		.menu-1 ul {
+			background-color: black;
+			list-style-type: none;
+			text-align: center;
+			padding-left: 30px;
+		}
+		.menu-1 ul li{
+			display: inline-table;
+			font-size: 13.7px;
+			height: 40px;
+			line-height: 40px;
+			padding-right: 73px;
+			overflow: hidden;
+		}
+		.menu-1 ul li a {
+			text-decoration: none;
+			color: #BBBBBB;
+			font-size: 13.7px;
+		}
+		.menu-1 ul li a:hover{
+			color: #f5f5f7;
+			font-size: 13.7px;
+		}
+		.menu-2{
+			height: 116px;
+			background-color: #111111;
+			margin-top: -16px;
+		}
+		.menu-2 ul{
+			list-style-type: none;
+		}
+		.menu-2 ul li{
+			display: inline-table;
+		}
+		.box-1 {
+			padding-top: 15px;
+			width: 72.72px;
+			position: relative;
+			left: 22.3%;
+			top: -4px;
+		} 
+		#ip11pro{
+			width: 36px;
+			position: relative;
+			left: 25%;
+		}
+		.box-1 a{
+			font-size: 11.8px;
+			color: white;
+			text-align: center;
+			font-weight: 400;
+			letter-spacing: -.01em;
+		}
+		.box-1 a:hover{
+			text-decoration: none;
+			color: #06c;
+		}
+		.box-1 p{
+			font-size: 10px;
+			color: #f56300;
+			text-align: center;
+			font-weight: 400;
+		}
+		.box-2 {
+			padding-top: 15px;
+			width: 53px;
+			position: absolute;
+			left: 29.7%;
+			top: 5.6%;
+		} 
+		#ip11{
+			width: 22px;
+			position: relative;
+			left: 26%;
+		}
+		.box-2 a{
+			font-size: 11.8px;
+			color: white;
+			text-align: center;
+			font-weight: 400;
+			letter-spacing: -.01em;
+		}
+		.box-2 a:hover{
+			text-decoration: none;
+			color: #06c;
+		}
+		.box-2 p{
+			font-size: 10px;
+			color: #f56300;
+			text-align: center;
+			font-weight: 400;
+		}
+		.box-3 {
+			padding-top: 15px;
+			width: 50.8px;
+			position: absolute;
+			left: 36%;
+			top: 5.6%;
+		} 
+		#ip11{
+			width: 22px;
+			position: relative;
+			left: 26%;
+		}
+		.box-3 a{
+			font-size: 11.8px;
+			color: white;
+			text-align: center;
+			font-weight: 400;
+			letter-spacing: -.01em;
+		}
+		.box-3 a:hover{
+			text-decoration: none;
+			color: #06c;
+		}
+		.box-3 p{
+			font-size: 10px;
+			color: #f56300;
+			text-align: center;
+			font-weight: 400;
+		}
+		.box-4 {
+			padding-top: 15px;
+			width: 45.65px;
+			position: absolute;
+			left: 42%;
+			top: 5.6%;
+		} 
+		#ip8{
+			width: 37px;
+			position: relative;
+			left: 10%;
+		}
+		.box-4 a{
+			font-size: 11.8px;
+			color: white;
+			text-align: center;
+			font-weight: 400;
+			letter-spacing: -.01em;
+		}
+		.box-4 a:hover{
+			text-decoration: none;
+			color: #06c;
+		}
+		.box-5 {
+			padding-top: 15px;
+			width: 50.48px;
+			position: absolute;
+			left: 48%;
+			top: 5.6%;
+		} 
+		#ipCo{
+			width: 50.48px;
+			position: relative;
+		}
+		.box-5 a{
+			font-size: 11.8px;
+			color: white;
+			text-align: center;
+			font-weight: 400;
+			letter-spacing: .01em;
+		}
+		.box-5 a:hover{
+			text-decoration: none;
+			color: #06c;
+		}
+		.box-6 {
+			padding-top: 15px;
+			width: 61.76px;
+			position: absolute;
+			left: 53.6%;
+			top: 5.6%;
+		} 
+		#appC{
+			width: 36px;
+			position: relative;
+			left: 20%;
+		}
+		.box-6 a{
+			font-size: 11.8px;
+			color: white;
+			text-align: center;
+			font-weight: 400;
+			letter-spacing: .01em;
+		}
+		.box-6 a:hover{
+			text-decoration: none;
+			color: #06c;
+		}
+		.box-7 {
+			padding-top: 15px;
+			width: 42.96px;
+			position: absolute;
+			left: 60.4%;
+			top: 5.6%;
+		} 
+		#airP{
+			width: 27px;
+			position: relative;
+			left: 20%;
+		}
+		.box-7 a{
+			font-size: 11.8px;
+			color: white;
+			text-align: center;
+			font-weight: 400;
+			letter-spacing: .01em;
+		}
+		.box-7 a:hover{
+			text-decoration: none;
+			color: #06c;
+		}
+		.box-7 p{
+			font-size: 10px;
+			color: #f56300;
+			text-align: center;
+			font-weight: 400;
+		}
+		.box-8 {
+			padding-top: 15px;
+			width: 66.9px;
+			position: absolute;
+			left: 66.0%;
+			top: 5.6%;
+		} 
+		#ass{
+			width: 32px;
+			position: relative;
+			left: 20%;
+		}
+		.box-8 a{
+			font-size: 11.8px;
+			color: white;
+			text-align: center;
+			font-weight: 400;
+			letter-spacing: .01em;
+		}
+		.box-8 a:hover{
+			text-decoration: none;
+			color: #06c;
+		}
+		.box-9 {
+			padding-top: 15px;
+			width: 37px;
+			position: absolute;
+			left: 72.7%;
+			top: 5.6%;
+		} 
+		#ios{
+			width: 32px;
+			position: relative;
+			left: 8%;
+		}
+		.box-9 a{
+			font-size: 11.8px;
+			color: white;
+			text-align: center;
+			font-weight: 400;
+			letter-spacing: .01em;
+		}
+		.box-9 a:hover{
+			text-decoration: none;
+			color: #06c;
+		}
+		.ip11-intro{
+			text-align: center;
+			padding-top: 80px;
+			color: white;
+			background-color: #000;
+		}
+		.ip11-intro h2{
+			font-size: 32px;
+			padding-bottom: 10px;
+		}
+		.ip11-intro h1{
+			font-size: 44px;
+			padding-bottom: 13px;
+			line-height: 1.1;
+		}
+		.ip11-intro p{
+			font-size: 19px;
+		}
+		.ip11-intro button{
+			border-radius: 18px;
+			width: 61.31px;
+			height: 36px;
+			color: #fff;
+			background-color: #0071e3;
+			border: none;
+		}
+		.ip11-intro a{
+			padding-top: 100px;
+			font-size: 19px;
+		}
+		.ip11-intro img{
+			width: 1518px;
+			height: 780px;
+		}
+		.the-vb{
+			width: 288.33px;
+			text-align: center;
+			margin-top: 215px;
+			margin-left: 260px;
+		}
+		.the-vb h2{
+			font-size: 32px;
+		}
+		.the-vb h1{
+			font-size: 48px;
+			line-height: 1.08349;
+		}
+		.ip11-intro-2 img{
+			width: 796px;
+			height: 819px;
+			float: right;
+			margin-right: 105px;
+			margin-top: -400px;
+		}
+		.ip11-intro-2 button{
+			border-radius: 18px;
+			width: 57px;
+			height: 35px;
+			color: white;
+			background-color: #2997ff;
+			border: none;
+		}
+		.ip11-intro-2{
+			width: 100%;
+			height: 1132px;
+		}
+		.ip11-intro-3{
+			background-color: #F8FBEF;
+			width: 1380px;
+			height: 325px;
+			margin-left: 70px;
+			margin-top: -200px;
+		}
+		.ip11-intro-3 img{
+			width: 459px;
+			height: 285px;
+			float: right;
+			margin-top: -200px;
+			margin-right: 230px;
+		}
+		.ip11-intro-3 a {
+			font-size: 21px;
+			line-height: 1.381;
+			font-weight: 400;
+            letter-spacing: .011em;
+			}
+			.ip11-intro-3 h3{
+				font-size: 40px;
+                line-height: 1.1;
+                font-weight: 550;
+                letter-spacing: -0.04em;
+                font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+			}
+			.the-vb-1{
+				padding-left: 210px;
+				padding-top:105px;
+			}
+			#qa{
+				text-align: center;
+				padding-top: 100px;
+				font-size: 48px;
+                letter-spacing: -.05em;
+                font-weight: 600;
+			}
+			.intro-ip11{
+				width: 210.66px;
+				font-size: 14px;
+				position: relative;
+				margin-top: -664.5px;
+				margin-left: 550px;
+			}
+			.intro-ip11 img{
+				width: 152px;
+				height: 251px;
+			}
+			.intro-ip11 h3{
+				font-size: 24px;
+				line-height: 1.16667;
+                letter-spacing: .009em;
+                font-weight: 600;
+                font-family: "SF Pro Display","SF Pro Icons","Helvetica";
+                padding-top: 25px;
+			}
+			.intro-ip11 h5{
+				font-size: 14px;
+				font-weight: 600;
+			}
+			.intro-ip11 p{
+				font-size: 14px;
+			}
+			#sss{
+				padding-top: 10px;
+			}
+			.intro-ip11 sup{
+				font-size: 10px;
+			}
+			.buy{
+				border-radius: 18px;
+			    width: 50px;
+			    height: 25px;
+			    color: #BBBBBB;
+			    background-color: #2997ff;
+			    border: none;
+			    font-size: 12px;
+			    color: #fff;
+			}
+			.more-iphone{
+				background-color: #F2F2F2;
+				margin-top: 30px;
+			}
+			.intro-ip11-pro{
+				width: 210.66px;
+				font-size: 14px;
+				padding-top: 90px;
+				margin-left: 300px;
+			}
+			.intro-ip11-pro img{
+				width: 190px;
+				height: 251px;
+			}
+			.intro-ip11-pro h3{
+				font-size: 24px;
+				line-height: 1.16667;
+                letter-spacing: .009em;
+                font-weight: 600;
+                font-family: "SF Pro Display","SF Pro Icons","Helvetica";
+                padding-top: 25px;
+			}
+			.intro-ip11-pro h5{
+				font-size: 14px;
+				font-weight: 600;
+			}
+			.intro-ip11-pro p{
+				font-size: 14px;
+			}
+			#sss{
+				padding-top: 10px;
+			}
+			.intro-ip11-pro sup{
+				font-size: 10px;
+			}
+			.buy{
+				border-radius: 18px;
+			    width: 50px;
+			    height: 25px;
+			    color: #BBBBBB;
+			    background-color: #2997ff;
+			    border: none;
+			    font-size: 12px;
+			    color: #fff;
+			}
+			.intro-ipxr{
+				width: 210.66px;
+				font-size: 14px;
+				position: relative;
+				margin-top: -664.5px;
+				margin-left: 790px;
+			}
+			.intro-ipxr img{
+				width: 152px;
+				height: 251px;
+			}
+			.intro-ipxr h3{
+				font-size: 24px;
+				line-height: 1.16667;
+                letter-spacing: .009em;
+                font-weight: 600;
+                font-family: "SF Pro Display","SF Pro Icons","Helvetica";
+                padding-top: 25px;
+			}
+			.intro-ipxr h5{
+				font-size: 14px;
+				font-weight: 600;
+				margin-top: 3px;
+			}
+			.intro-ipxr p{
+				font-size: 14px;
+			}
+			#sss{
+				padding-top: 10px;
+			}
+			.intro-ipxr sup{
+				font-size: 10px;
+			}
+			.buy{
+				border-radius: 18px;
+			    width: 50px;
+			    height: 25px;
+			    color: #BBBBBB;
+			    background-color: #2997ff;
+			    border: none;
+			    font-size: 12px;
+			    color: #fff;
+			}
+			#ip-xr{
+				height: 18px;
+				width: 102px;
+				margin-top: 9px;
+			}
+			.intro-ip8{
+				width: 210.66px;
+				font-size: 14px;
+				position: relative;
+				margin-top: -664.5px;
+				margin-left: 1030px;
+			}
+			.intro-ip8 img{
+				width: 178px;
+				height: 251px;
+			}
+			.intro-ip8 h3{
+				font-size: 24px;
+				line-height: 1.16667;
+                letter-spacing: .009em;
+                font-weight: 600;
+                font-family: "SF Pro Display","SF Pro Icons","Helvetica";
+                padding-top: 25px;
+			}
+			.intro-ip8 h5{
+				font-size: 14px;
+				font-weight: 600;
+			}
+			.intro-ip8 p{
+				font-size: 14px;
+			}
+			#sss{
+				padding-top: 10px;
+			}
+			.intro-ip8 sup{
+				font-size: 10px;
+			}
+			.buy{
+				border-radius: 18px;
+			    width: 50px;
+			    height: 25px;
+			    color: #BBBBBB;
+			    background-color: #2997ff;
+			    border: none;
+			    font-size: 12px;
+			    color: #fff;
+			}
+			.all-ip{
+				font-size: 24px;
+				position: relative;
+				padding-top: 80px;
+				text-align: center;
+			}
+			.apple-card{
+				width: 1375px;
+				height: 525px;
+				background-color: #FFF;
+				margin-top: 30px;
+				margin-left: 75px;
+			}
+			.apple-card img{
+				width: 722px;
+				height: 433px;
+				margin-top: 92px;
+				margin-left: 140px;
+			}
+			.smg{
+				width: 375px;
+				text-align: center;
+				float: right;	
+				padding-top: 130px;
+				margin-right: 65px;
+			}
+			.smg h1{
+				font-size: 48px;
+                line-height: 1.08349;
+                font-weight: 600;
+                letter-spacing: -.003em;
+                font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+			}
+			.smg p , a{
+				font-size: 21px;
+			}
+			.learn-more{
+				font-size: 14px;
+			}
+			.ip7plus{
+				background-color: #FFF;
+				width: 675px;
+				height: 650px;
+				margin-left: 75px;
+				margin-top: 30px;
+				text-align: center;
+			}
+			.ip7plus h1,.ipX-box h1{
+				font-size: 48px;
+                line-height: 1.08349;
+                font-weight: 500;
+                letter-spacing: -.003em;
+                font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+                padding-top: 70px;
+			}
+			.ip7plus p,.ipX-box p{
+				font-size: 21px;
+				letter-spacing: -0.008em;
+				line-height: -0.008em;
+			}
+			.ip7plus img{
+				width: 300px;
+				height: 275px;
+				margin-top: 50px;
+			}
+			.ip7plus a{
+				padding-top: -5px;
+			}
+			.ipX-box{
+				background-color: #FFF;
+				width: 675px;
+				height: 650px;
+				position: relative;
+				float: right;
+				margin-top: -650.5px;
+				margin-right: 68px;
+				text-align: center;
+			}
+			.ipX-box img{
+				width: 675px;
+				height: 251px;
+				margin-top: 30px;
+			}
+			.why-ip{
+				text-align: center;
+				padding-top: 50px;
+			}
+			.why-ip h1{
+				font-size: 28px;
+				letter-spacing: -0.01em;
+			}
+			.why-ip p{
+				font-size: 19px;
+				letter-spacing: -0.01em;
+			}
+			#fa{
+				text-align: center;
+				font-size: 52px;
+				padding-top: 150px;
+			}
+			.AirPods{
+				width: 1050px;
+				height:510px;
+				background-color: #fff;
+				margin-left: 220px;
+				margin-top: 70px;
+			}
+			.AirPods-intro{
+				text-align: center;
+				float: left;
+				margin-top: 190px;
+				margin-left: 70px;
+			}
+			.AirPods-intro h1{
+				font-size: 48px;
+			}
+			.AirPods-intro p{
+				font-size: 21px;
+			}
+			.AirPods img{
+				width: 717px;
+				height: 425px;
+				float: right;
+				margin-top: 36px;
+			}
+			.case-1{
+				width: 340.3px;
+				height: 510px;
+				background-color: #fff;
+				margin-top: 10px;
+				margin-left: 220px;
+				text-align: center;
+			}
+			.case-1 img{
+				height: 248px;
+				width: 340px;
+				margin-top: 70px;
+			}
+			.case-1 p{
+				color:#bf4800;
+				font-size: 12px;
+				margin-top: 45px;
+			}
+			.case-1 a{
+				color:#06c;
+				font-size: 17px;
+			}
+			.case-2{
+				width: 343.3px;
+				height: 510px;
+				background-color: #fff;
+				margin-top: -510px;
+				margin-left: 572.3px;
+				text-align: center;
+			}
+			.case-2 img{
+				height: 248px;
+				width: 340px;
+				margin-top: 70px;
+			}
+			.case-2 p{
+				color:#bf4800;
+				font-size: 12px;
+				margin-top: 45px;
+			}
+			.case-2 a{
+				color:#06c;
+				font-size: 17px;
+			}
+			.case-3{
+				width: 343.3px;
+				height: 510px;
+				background-color: #fff;
+				margin-top: -510px;
+				margin-left: 927px;
+				text-align: center;
+			}
+			.case-3 img{
+				height: 248px;
+				width: 340px;
+				margin-top: 70px;
+			}
+			.case-3 p{
+				color:#bf4800;
+				font-size: 12px;
+				margin-top: 45px;
+			}
+			.case-3 a{
+				color:#06c;
+				font-size: 17px;
+			}
+			#all-a{
+				text-align: center;
+				margin-top: 60px;
+			}
+			#all-a a{
+				color:#06c;
+				font-size: 24px;
+			}
+			.aw{
+				width: 100%;
+				height: 650px;
+				background-color: GhostWhite;
+				margin-top: 90px;
+			}
+			#awimg{
+				width: 650px;
+				height: 486px;
+				float: right;
+				margin-top: 70px;
+				margin-right: 160px;
+			}
+			.aw-intro {
+				text-align: center;
+				float: left;
+				margin-top: 166px;
+				margin-left: 270px;
+			}
+			.aw-intro img{
+				width: 134px;
+				height: 51px;
+			}
+			.aw-intro h1{
+				font-size: 48px;
+                line-height: 1.08349;
+                letter-spacing: -.023em;
+                font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+			}
+			.aw-intro button{
+				border-radius: 18px;
+			    width: 61.31px;
+			    height: 36px;
+			    color: #fff;
+			    background-color: #0071e3;
+			    border: none;
+			}
+			.aw-intro a{
+				font-size: 21px;
+                line-height: 1.381;
+                font-weight: 400;
+                letter-spacing: -.011em;
+                font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+			}
+			.ph1{
+				width: 100%;
+				height: 215px;
+				margin-top: 64px;
+			}
+			.ph1-box1{
+				width: 33.33333333%;
+				height: 215px;
+				text-align: center;
+				margin-left: 35px;
+			}
+			.ph1-box1 img{
+				width: 52px;
+				height: 56px;
+			}
+			.ph1-box1 p{
+				font-size: 21px;
+				margin-top: -5px;
+			}
+			.ph1-box1 h3{
+				font-size: 20px;
+				font-weight: 600;
+				margin-top: 18px;
+			}
+			.ttt{
+				position: relative;
+				margin-top: -18px;
+				font-size: 21px;
+                line-height: 1.381;
+                font-weight: 400;
+			}
+			.ph1-box2{
+				width: 33.33333333%;
+				height: 215px;
+				text-align: center;
+				margin-left: 530px;
+				margin-top: -215px;
+			}
+			.ph1-box2 img{
+				width: 55px;
+				height: 56px;
+			}
+			.ph1-box2 p{
+				font-size: 21px;
+				margin-top: -5px;
+			}
+			.ph1-box2 h3{
+				font-size: 20px;
+				font-weight: 600;
+				margin-top: 18px;
+			}
+			.ph1-box3{
+				width: 33.33333333%;
+				height: 215px;
+				text-align: center;
+				margin-left: 530px;
+				margin-top: -215px;
+				float: right;
+			}
+			.ph1-box3 img{
+				width: 82px;
+				height: 56px;
+			}
+			.ph1-box3 p{
+				font-size: 21px;
+				margin-top: -5px;
+			}
+			.ph1-box3 h3{
+				font-size: 20px;
+				font-weight: 600;
+				margin-top: 18px;
+			}
+			.what-ip{
+				text-align: center;
+				margin-top: 135px;
+			}
+			.what-ip h1{
+				font-weight: 600;
+				font-size: 50px;
+				letter-spacing: -0.1px;
+			}
+			.red-box{
+				width: 1380px;
+				height: 500px;
+				background-image: url(https://www.apple.com/v/iphone/home/af/images/overview/why-iphone/ios13__c80q5yjmf78m_large.jpg);
+				background-repeat: none;
+				margin-left: 70px;
+				text-align: center;
+				margin-top: 70px;
+			}
+			.red-box p{
+				font-size: 28px;
+				color: #f5f5f7;
+				padding-top: 180px;
+			}
+			.red-box h1{
+				font-size: 40px;
+				color: #f5f5f7;
+				font-weight: 600;
+			}
+			.red-box a{
+				font-size: 21px;
+                line-height: 1.381;
+                font-weight: 400;
+                color: #f5f5f7;
+			}
+			
+			.red-box-2{
+				width: 675px;
+				height: 600px;
+				margin-left: 70px;
+				text-align: center;
+				background-color: black;
+				margin-top: 30px;
+			}
+			.red-box-2 img{
+				width: 494px;
+				height: 355px;
+				float: right;
+				margin-top: 63.2px;
+			}
+			.red-box-2 p{
+				font-size: 21px;
+				color: #f5f5f7;
+			}
+			.red-box-2 h1{
+				font-size: 40px;
+				color: #f5f5f7;
+				font-weight: 600;
+				padding-top: 60px;
+			}
+			.ttt1{
+				margin-top: -10px;
+			}
+			.ttt2{
+				margin-top: -20px;
+			}
+			.ttt1 a{
+				font-size: 21px;
+                line-height: 1.381;
+                font-weight: 400;
+                color: #06c;
+			}
+			.red-box-3{
+				width: 675px;
+				height: 600px;
+				margin-left: 70px;
+				text-align: center;
+				background-color: black;
+				margin-left: 775px;
+				margin-top: -600px;
+
+			}
+			.red-box-3 img{
+				width: 248px;
+				height: 378px;
+				margin-top: -410px;
+			}
+			.red-box-3 p{
+				font-size: 21px;
+				color: #f5f5f7;
+			}
+			.red-box-3 h1{
+				font-size: 40px;
+				color: #f5f5f7;
+				font-weight: 600;
+				padding-top: 60px;
+			}
+			.red-box-4{
+				width: 1380px;
+				height: 500px;
+				background-color: black;
+				margin-left: 70px;
+				text-align: center;
+				margin-top: 30px;
+			}
+			.red-box-4-intro{
+				float: left;
+				margin-top: 200px;
+				margin-left: 260px;
+			}
+			.red-box-4-intro h1{
+				font-size: 40px;
+				color: #f5f5f7;
+				font-weight: 600;
+			}
+			.red-box-4-intro a{
+				font-size: 21px;
+                line-height: 1.381;
+                font-weight: 400;
+                color: #06c;
+			}
+			.red-box-4 img{
+				width: 442px;
+				height: 370px;
+				float: right;
+				margin-top: 64px;
+				margin-right: 120px;
+			}
+			.red-box-5{
+				width: 675px;
+				height: 600px;
+				margin-left: 70px;
+				text-align: center;
+				background-color: black;
+				margin-top: 30px;
+			}
+			.red-box-5 img{
+				width: 440px;
+				height: 374px;
+				margin-top: 33px;
+			}
+			.red-box-5 h1{
+				font-size: 45px;
+				color: #f5f5f7;
+				font-weight: 600;
+				margin-top: 35px;
+			}
+			.red-box-6{
+				width: 675px;
+				height: 600px;
+				margin-left: 70px;
+				text-align: center;
+				margin-left: 775px;
+				margin-top: -600px;
+				background-image: url(https://www.apple.com/v/iphone/home/af/images/overview/more-iphone/shot_on_iphone__fjwoocpis3e6_large.jpg);
+
+			}
+			.red-box-6 p{
+				font-size: 21px;
+				font-size: 21px;
+                line-height: 1.381;
+                font-weight: 400;
+                letter-spacing: .011em;
+				color: #f5f5f7;
+			}
+			.red-box-6 h1{
+				font-size: 45px;
+				color: #f5f5f7;
+				font-weight: 600;
+				padding-top: 60px;
+			}
+			.red-box-7{
+				width: 1380px;
+				height: 500px;
+				background-color: black;
+				margin-left: 70px;
+				text-align: center;
+				margin-top: -120px;
+			}
+			.red-box-7-intro{
+				margin-top: 200px;
+				margin-left: 260px;
+				position: relative;
+				left: -36%;
+				top: 44%;
+			}
+			.red-box-7-intro p{
+				font-size: 21px;
+				color: #f5f5f7;
+			}
+			.red-box-7-intro img{
+				width: 97px;
+				height: 38px;
+				
+			}
+			.red-box-7-intro a{
+				font-size: 21px;
+                line-height: 1.381;
+                font-weight: 400;
+                color: #06c;
+			}
+			.red-box-7 img{
+				width: 633px;
+				height: 318px;
+				float: right;
+				margin-top: -60px;
+				margin-right: 60px;
+			}
+			#img-1 img{
+				width: 98px;
+				height: 38px;
+			}
+			#img-1{
+				float: left;
+				position: relative;
+				top: 45%;
+				margin-left: 273px;
+			}
+			#content{
+				float: right;
+				position: relative;
+				margin-top:280px;
+				margin-right: -480px;
+			}
+			#content p{
+				font-size: 18px;
+				color: #f5f5f7;
+			}
+			.red-box-8{
+				max-width: 675px;
+				height: 600px;
+				margin-left: 70px;
+				text-align: center;
+				background-image: url(https://www.apple.com/v/iphone/home/af/images/overview/apple-card/apple_card_tile__cu5p3ujk6v8m_large.jpg);
+				background-repeat: no-repeat;
+				background-position: bottom;
+				margin-top: 30px;
+				background-color: #fff;
+
+			}
+			.red-box-8 p{
+				font-size: 21px;
+				color: #black;
+			}
+			.red-box-8 img{
+				position: relative;
+				width: 954px;
+				height: 351px;
+				overflow: hidden;
+			}
+			.content2{
+				text-align: center;
+				padding-top: 70px;
+			}
+			.content2 img{
+				width: 278px;
+				height: 37px;
+			}
+			.red-box-9{
+				max-width: 675px;
+				height: 600px;
+				margin-top: -600px;
+				margin-left: 775px;
+				text-align: center;
+				background-image: url(https://www.apple.com/v/iphone/home/af/images/overview/more-iphone/tv-update/apple_arcade_tile_narrow__frmck3xbuweq_large.jpg);
+				background-repeat: no-repeat;
+				background-position: bottom;
+				background-color: #fff;
+
+			}
+			.red-box-9 p{
+				font-size: 21px;
+				color: #fff;
+			}
+			.content3{
+				text-align: center;
+				padding-top: 70px;
+			}
+			.content3 img{
+				width: 179px;
+				height: 38px;
+			}
+			.red-box-10{
+				max-width: 675px;
+				height: 600px;
+				margin-left: 70px;
+				text-align: center;
+				background-image: url(https://www.apple.com/v/iphone/home/af/images/overview/more-iphone/apple_music__dukr9h4bvfqu_large.png);
+				background-repeat: no-repeat;
+				background-position: bottom;
+				margin-top: 30px;
+				background: -webkit-linear-gradient(115deg, #d253b1, #fb6f4a);
+                background: linear-gradient(-25deg, #d253b1, #fb6f4a);
+			}
+			.red-box-10 p,.red-box-10 a ,.red-box-11 p,.red-box-11 a{
+				font-size: 21px;
+				color: #fff;
+			}
+			.red-box-10 img{
+				width: 554px;
+				height: 384px;
+				margin-top: 2px;
+			}
+			.content4{
+				text-align: center;
+				padding-top: 70px;
+			}
+			.content4 img{
+				width: 156px;
+				height: 39px;
+			}
+			.red-box-11{
+				max-width: 675px;
+				height: 600px;
+				margin-top: -600px;
+				margin-left: 775px;
+				text-align: center;
+				background-image: url(https://www.apple.com/v/iphone/home/af/images/overview/more-iphone/apple_news_plus_tile__esw1e1fhbh4y_large.jpg);
+				background-repeat: no-repeat;
+				background-position: bottom;
+				background-color: #fff;
+
+			}
+			.red-box-5 p{
+				font-size: 21px;
+				color: #fff;
+			}
+			.content5{
+				text-align: center;
+				padding-top: 70px;
+			}
+			.content5 img{
+				width: 174px;
+				height: 38px;
+			}
+			.red-box-12{
+				width: 1380px;
+				height: 500px;
+				background-color: #fff;
+				margin-left: 70px;
+				text-align: center;
+				margin-top: 30px;
+			}
+			.red-box-12-intro{
+				float: left;
+				margin-top: 150px;
+				margin-left: 150px;
+			}
+			.red-box-12-intro h1{
+				font-size: 40px;
+				color: black;
+				font-weight: 600;
+			}
+			.red-box-12-intro a{
+				font-size: 21px;
+                line-height: 1.381;
+                font-weight: 400;
+                color: #06c;
+			}
+			.red-box-12-intro p{
+				font-size: 21px;
+                line-height: 1.381;
+                font-weight: 400;
+			}
+			.red-box-12 img{
+				width: 766px;
+				height: 388px;
+				float: right;
+				margin-top: 110px;
+				margin-right: 50px;
+			}
+			.list-1{
+				width: 980px;
+				position: relative;
+				left: 50%;
+				margin-left: -490px;
+				font-size: 12px;
+				color: #86868b;
+				border-bottom: 1px solid #86868b;
+			}
+			.ol.ul1{
+				list-style-type: number;
+			}
+			.list{
+				background-color: #f5f5f7;
+				padding-top: 25px;
+			}
+			.cac{
+				width: 100%;
+				height: 25px;
+				background-color: #f8f9fa;
+			}
+	</style>
+	<script type="text/javascript">
+		$
+	</script>
+</head>
+<body>
+	<div class="menu-1">
+		<ul>
+			<li><a href="#"><img src="https://www.apple.com/ac/globalnav/5/en_US/images/globalnav/apple/image_large.svg"></a></li>
+			<li><a href="#">Mac</a></li>
+			<li><a href="#">iPad</a></li>
+			<li><a href="#">iPhone</a></li>
+			<li><a href="#">Watch</a></li>
+			<li><a href="#">TV</a></li>
+			<li><a href="#">Music</a></li>
+			<li><a href="#">Support</a></li>
+			<li><a href="#"><img src="file:///C:/Users/hung/Downloads/search-white-18dp%20(1).svg" id="img-search"></a></li>
+			<li><a href="#"><img src="https://www.apple.com/ac/globalnav/5/en_US/images/globalnav/bag/image_large.svg"></a></li>
+		</ul>
+	</div>
+	<div class="menu-2">
+		<div class="box-1">
+					<img id ="ip11pro" src="https://www.apple.com/v/iphone/home/af/images/chapternav/iphone_11_pro_dark__cchxb3bv66vm_large.svg"></br>
+					<a href="#">iPhone 11 Pro</a>
+					<p>new</p>
+			</div>
+			<div class="box-2">
+					<img id ="ip11" src="https://www.apple.com/v/iphone/home/af/images/chapternav/iphone_11_dark__exagpxb8zh4y_large.svg"></br>
+					<a href="#">iPhone 11</a>
+					<p>new</p>
+			</div>
+			<div class="box-3">
+					<img id ="ip11" src="https://www.apple.com/v/iphone/home/af/images/chapternav/iphone_11_dark__exagpxb8zh4y_large.svg"></br>
+					<a href="#">iPhone Xr</a>
+			</div>
+			<div class="box-4">
+					<img id ="ip8" src="https://www.apple.com/v/iphone/home/af/images/chapternav/iphone_8_dark__d4f1b8j5cwia_large.svg"></br>
+					<a href="#">iPhone 8</a>
+			</div>
+			<div class="box-5">
+					<img id ="ipCo" src="https://www.apple.com/v/iphone/home/af/images/chapternav/iphone_comp_dark__ganfgd3pa9m6_large.svg"></br>
+					<a href="#">Compare</a>
+			</div>
+			<div class="box-6">
+					<img id ="appC" src="https://www.apple.com/v/iphone/home/af/images/chapternav/iphone_apple_card_dark__fsk0oaya7eqi_large.svg"></br>
+					<a href="#">Apple Card</a>
+			</div>
+			<div class="box-7">
+					<img id ="airP" src="https://www.apple.com/v/iphone/home/af/images/chapternav/iphone_airpods_dark__b5yw8pv4m4z6_large.svg"></br>
+					<a href="#">AirPods</a>
+					<p>new</p>
+			</div>
+			<div class="box-8">
+					<img id ="ass" src="https://www.apple.com/v/iphone/home/af/images/chapternav/iphone_acc_dark__b5fvf10sbhci_large.svg"></br>
+					<a href="#">Accessories</a>
+			</div>
+			<div class="box-9">
+					<img id ="ios" src="https://www.apple.com/v/iphone/home/af/images/chapternav/iphone_ios_dark__bb9g9sts3q76_large.svg"></br>
+					<a href="#">iOS 13</a>
+			</div>
+		</div>
+		<div class="ip11-intro">
+			<h2><b>iPhone 11 Pro</b></h2>
+			<h1><b>Pro cameras. Pro display. Pro performance.</b></h1></b>
+			<p>From $28.29/mo. or $679 with trade-in.*</p>
+			<button>Buy</button></br>
+		</br>
+			<a href="#">Learn more</a></br>
+		</br>
+			<img src="https://www.apple.com/v/iphone/home/af/images/overview/hero/hero_iphone11_pro__je9i781j99u2_large.jpg">
+		</div>
+		<div class="ip11-intro-2">
+			<div class="the-vb">
+				<h2>iPhone 11</h2>
+				<h1>Just the right amount of everything.</h1>
+			</br>
+				<p>From $18.70/mo .or $449 with trade-in.*</p>
+				<button>Buy</button></br></br>
+				<a href="#">Learn more</a></br>
+			</div>
+			<img src="https://www.apple.com/v/iphone/home/af/images/overview/hero/hero_iphone11__cuduq393pp8i_large.jpg">
+		</div>
+		<div class="ip11-intro-3">
+			<div class="the-vb-1">
+				<h3>iPhone 11 or</h3>
+				<h3>iPhone 11 Pro?</h3>
+				<a href="#">Get a quick take on the differences</a></br>
+			</div>
+			<img src="https://www.apple.com/v/iphone/home/af/images/overview/help-choose/compare_family__fbsuhz3gvqai_large.jpg">
+		</div>
+		<div class="more-iphone">
+			<h1 id="qa">Which iPhone is right for you?</h1>
+			<div class="intro-ip11-pro">
+				<img src="https://www.apple.com/v/iphone/home/af/images/overview/compare/compare_iphone_11_pro__fvqwhr4dkhiu_large.jpg">
+				<h3>iPhone 11 Pro</h3>
+				<h5>Starting at $999</h5>
+				<p id="sss">All-new triple-camera system (Ultra Wide, Wide, Telephoto)</p>
+				<p>Up to 20 hours of</br> video playback<sup>1</sup></p>
+				<p>Water resistant to a depth of 4 meters for up to 30 minutes<sup>2</sup></p>
+				<p>5.8” or 6.5” Super Retina XDR display<sup>3</sup></p>
+			</br>
+				<button class="buy">Buy</button>
+			    </br>
+			    </br>
+				<a href="#" class="learn-more">Learn more</a>
+			</div>
+			<div class="intro-ip11">
+				<img src="https://www.apple.com/v/iphone/home/af/images/overview/compare/compare_iphone_11__f0r1z5etd722_large.jpg">
+				<h3>iPhone 11</h3>
+				<h5>Starting at $699</h5>
+				<p id="sss">All-new dual-camera system (Ultra Wide, Wide)</p>
+				<p>Up to 17 hours of</br> video playback<sup>1</sup></p>
+				<p>Water resistant to a depth of 2 meters for up to 30 minutes<sup>2</sup></p>
+				<p>6.1” Liquid Retina HD display<sup>3</sup></p>
+			</br>
+		</br>
+				<button class="buy">Buy</button>
+			    </br>
+			    </br>
+				<a href="#" class="learn-more">Learn more</a>
+			</div>
+			<div class="intro-ipxr">
+				<img src="https://www.apple.com/v/iphone/home/af/images/overview/compare/compare_iphone_xr__dexbg7jerlqq_large.jpg" >
+			</br>
+			</br>
+				<img src="https://www.apple.com/v/iphone/home/af/images/overview/compare/logo_iphone_xr__b0yw7sz7cjiq_large.png" id="ip-xr">
+			</br>
+				<h5 style="padding-top: 9.7px">Starting at $599</h5>
+				<p id="sss">Single-camera system(Wide)</p></br>
+				<p>Up to 16 hours of</br> video playback<sup>1</sup></p>
+				<p>Water resistant to a depth of 1 meters for up to 30 minutes<sup>2</sup></p>
+				<p>6.1” Liquid Retina HD display<sup>3</sup></p>
+			</br>
+				<button class="buy" style="margin-top: 20px">Buy</button>
+			    </br>
+			    </br>
+				<a href="#" class="learn-more">Learn more</a>
+			</div>
+			<div class="intro-ip8">
+				<img src="https://www.apple.com/v/iphone/home/af/images/overview/compare/compare_iphone_8__fjto7zt8ldym_large.jpg">
+				<h3>iPhone 8</h3>
+				<h5>Starting at $499</h5>
+				<p id="sss">Single (Wide) or dual-camera system (Wide, Telephoto)</p>
+				<p>Up to 14 hours of</br> video playback<sup>1</sup></p>
+				<p>Water resistant to a depth of 1 meters for up to 30 minutes<sup>2</sup></p>
+				<p>4.7” or 5.5” Retina HD display</p>
+			</br>
+		</br>
+		<button class="buy">Buy</button>
+			    </br>
+			    </br>
+				<a href="#" class="learn-more">Learn more</a>
+	</div>
+	<div class="all-ip">
+		<a href="#">Compare all iPhone models</a>
+	</div>
+	<div class="apple-card">
+		<img src="https://www.apple.com/v/iphone/home/af/images/overview/apple-card/apple_card__eta2gejb8rgy_large.jpg">
+		<div class="smg"><h1>Apple Card</br> Monthly</br>Installments</h1>
+		<p>Pay for your next iPhone over time,</br>interest-free with Apple Card.</p>
+		<a href="#">Learn more</a></div>
+	</div>
+	<div class="ip7plus">
+		<h1>Get up to $500</br> toward a new iPhone.</h1>
+		<p>With Apple Trade In, you can get credit toward a new</br> iPhone when you trade in an eligible smartphone.<sup>4</sup></br> It’s good for you and the planet.</p>
+		<a href="#">Learn more</a></br>
+		<img src="https://www.apple.com/v/iphone/home/af/images/overview/retail/giveback__eeril6qn6wsy_large.jpg">
+	</div>
+	<div class="ipX-box">
+		<h1>The easiest way to</br> upgrade to the</br> latest iPhone.</h1>
+		<p>Join the iPhone Upgrade Program to get</br> the latest iPhone every year, low</br> monthly payments, and AppleCare+.<sup>5</sup></p>
+		<a href="#">Learn more</a></br>
+		<img src="https://www.apple.com/v/iphone/home/af/images/overview/retail/iphone_upgrade__xfm3lc1ma2a2_large.jpg">
+	</div>
+	<div class="why-ip">
+		<h1><strong>Why Apple is the best place to buy.</strong></h1>
+		<p>Have questions about carriers, payments, or</br> anything else iPhone? Just say the word.</p>
+		<a href="#">Learn more</a>
+	</div>
+	<h1 id="fa"><strong>Featured Accessories</strong></h1>
+	<div class="AirPods">
+		<div class="AirPods-intro">
+			<h1><strong>AirPods</strong></h1>
+			<p>Magic runs in the family.</p>
+			<a href="#">Learn more</a>
+		</div>
+		<img src="https://www.apple.com/v/iphone/home/af/images/overview/accessories/airpods_family__c8d6yb4ft7gy_large.jpg">
+	</div>
+	<div class="case-1">
+		<img src="https://www.apple.com/v/iphone/home/af/images/overview/accessories/accessories_case_leather__doswt5117h0m_large.jpg">
+		<p>new</p>
+		<a href="#">iPhone 11 Pro</br> Leather Case</a>
+	</div>
+	<div class="case-2">
+		<img src="https://www.apple.com/v/iphone/home/af/images/overview/accessories/accessories_case_silicone__bds3r3hugp7m_large.jpg">
+		<p>new</p>
+		<a href="#">iPhone 11 </br> Silicone Case</a>
+	</div>
+	<div class="case-3">
+		<img src="https://www.apple.com/v/iphone/home/af/images/overview/accessories/airpods_pro__bvzibrheofau_large.jpg">
+		<p>new</p>
+		<a href="#">AirPods Pro</a>
+	</div>
+	<div id="all-a"><a href="#" >Shop all iPhone accessories</a></div>
+	<div class="aw">
+		<div class="aw-intro">
+			<img src="https://www.apple.com/v/iphone/home/af/images/overview/applewatch/logo_apple_watch_series_5__f63pu4leugia_large.png">
+			<h1>You’ve never seen</br> a watch like this.</h1>
+		</br>
+			<button>Buy</button>
+		</br></br>
+			<a href="#" class="learn-more">Learn more</a>
+		</div>
+		<img src="https://www.apple.com/v/iphone/home/af/images/overview/applewatch/apple_watch__d9blthuk62s2_large.jpg" id="awimg">
+	</div>
+	<div class="ph1">
+		<div class="ph1-box1">
+			<img src="https://www.apple.com/v/iphone/home/af/images/overview/buystrip/icon_delivery__f5j4959bacae_large.png">
+			<h3>Fast, free delivery</h3>
+			<p>And free returns. See checkout for</br> delivery dates.</p>
+			<div class="ttt"><a href="#">Learn More</a></div>
+			
+		</div>
+		<div class="ph1-box2">
+			<img src="https://www.apple.com/v/iphone/home/af/images/overview/buystrip/icon_financing__bgh0sv2ezt8i_large.png">
+			<h3>Find the card for you</h3>
+			<p>Get 3% Daily Cash with Apple Card or</br> get up to 18 months special financing.</p>
+			<div class="ttt"><a href="#">Learn More</a></div>
+		</div>
+		<div class="ph1-box3">
+			<img src="https://www.apple.com/v/iphone/home/af/images/overview/buystrip/icon_personal_setup__behxb3rrvitu_large.png">
+			<h3>Online Personal Session</h3>
+			<p>From basics to pro tips, get more out of</br> your new iPhone with the help of a</br> Specialist.</p>
+			<div class="ttt"><a href="#">Learn More</a></div>
+		</div>
+	</div>
+	<div class="what-ip"><h1>What makes an iPhone an iPhone?</h1></div>
+	<div class="red-box">
+		<p>iOS 13</p>
+		<h1>iOS 13 A whole new look. On a whole new level.</h1>
+		<a href="#">Learn More</a>
+	</div>
+	<div class="red-box-2">
+		<h1>Only iPhone</h1>
+		<p>No other phone is like iPhone.</p>
+		<div class="ttt1"><a href="#">Learn More</a></div>
+		<img src="https://www.apple.com/v/iphone/home/af/images/overview/why-iphone/only_iphone__obkff2okunem_large.jpg">
+	</div>
+	<div class="red-box-3">
+		<h1>Why Switch</h1>
+		<p>Life is easier on iPhone.</p>
+		<div class="ttt1"><a href="#">Learn More</a></div>
+		<img src="https://www.apple.com/v/iphone/home/af/images/overview/why-iphone/why_switch_alt__bwpj91ox6she_large.jpg">
+	</div>
+	<div class="red-box-4">
+		<div class="red-box-4-intro">
+			<h1>Privacy</h1>
+		    <a href="#">Learn more about Apple and privacy</a>
+		</div>
+		<img src="https://www.apple.com/v/iphone/home/af/images/overview/why-iphone/privacy__176qczzy02ai_large.jpg">
+	</div>
+	<div class="red-box-5">
+		<img src="https://www.apple.com/v/iphone/home/af/images/overview/more-iphone/thats_iphone__d4ojsfbp8paq_large.jpg">
+		<h1>That’s iPhone.</h1>
+	</br>
+		<div class="ttt2"><a href="#">See all kinds of things iPhone can do</a></div>
+	</div>
+	<div class="red-box-6">
+		<h1>How to shoot on iPhone</h1>
+		<p>We believe that everyone can take great</br> photos. Explore some tips and techniques to</br> help you take even better ones.</p>
+		<div class="ttt1"><a href="#">Learn More</a></div>
+	</div>
+	<div class="what-ip"><h1>Get more out of your iPhone.</h1></div>
+	<div class="red-box-7">
+		<div id="img-1">
+			<img src="https://www.apple.com/v/iphone/home/af/images/overview/more-iphone/tv-update/apple_tv_plus_logo__elhpe3osiyky_large.png">
+		</div>
+		<div class="red-box-7-intro">
+			<p><strong>Lights. Camera. iPhone.</strong></br>
+			Every new iPhone comes with</br> one year of Apple TV+.<sup>6</sup></p>
+		    <a href="#">Watch now on the Apple TV app</a>
+		</div>
+		<img src="https://www.apple.com/v/iphone/home/af/images/overview/more-iphone/tv-update/apple_tv_plus_tile_tms__cf2spubmv3jm_large.jpg">
+		<div id="content"><p>SAG and Critics’ Choice awards winner</p></div>
+	</div>
+	<div class="red-box-8">
+		<div class="content2">
+			<img src="https://www.apple.com/v/iphone/home/af/images/overview/holiday/apple_card_logo__eqs6gcgnc3iq_large.png">
+		</br></br>
+			<p>Get 3% Daily Cash on purchases from</br> Apple using Apple Card.</p>
+			<a href="#">Learn More</a>
+		</div>
+	</div>
+	<div class="red-box-9">
+		<div class="content3">
+			<img src="https://www.apple.com/v/iphone/home/af/images/overview/more-iphone/tv-update/apple_arcade_logo_tile__fp4zdpu6xkia_large.png">
+		</br></br>
+			<p>A new world to play in.</br>100+ new games, ad-free.</p>
+			<a href="#">Learn More    </a> <a href="#">Try it free<sup>7</sup></a>
+		</div>
+	</div>
+	<div class="red-box-10">
+		<div class="content4">
+			<img src="https://www.apple.com/v/iphone/home/af/images/overview/more-iphone/apple_music_logo__dvipaf20ql8i_large.png">
+		</br></br>
+			<p>60 million songs. 3 months on us.</p>
+			<a href="#">Learn More    </a> <a href="#">Try it free<sup>8</sup></a>
+		</div>
+		<img src="https://www.apple.com/v/iphone/home/af/images/overview/more-iphone/apple_music__dukr9h4bvfqu_large.png">
+	</div>
+	<div class="red-box-11">
+		<div class="content5">
+			<img src="https://www.apple.com/v/iphone/home/af/images/overview/more-iphone/apple_news_plus_logo__cv9wdqiqqm6a_large.png">
+		</br></br>
+			<p>Hundreds of magazines and</br>leading newspapers. One subscription.</p>
+			<a href="#">Learn More    </a> <a href="#">Try it free<sup>9</sup></a>
+		</div>
+	</div>
+	<div class="red-box-12">
+		<div class="red-box-12-intro">
+			<h1>Introducing</br>the Apple</br>Research app.</h1>
+			<p>The future of health research is you.</p>
+		    <a href="#">Learn More</a>
+		</div>
+		<img src="https://www.apple.com/v/iphone/home/af/images/overview/more-iphone/research/apple-research__bd1q653bnoc2_large.jpg">
+	</div>
+</div>
+<div class="cac"></div>
+<div class="list">
+	<div class="list-1"><p>
+* Trade In: Trade‑in values vary. iPhone 11 and iPhone 11 Pro promotional pricing is after trade‑in of iPhone 8 Plus and iPhone X in good condition. Additional trade‑in values require purchase of a new iPhone, subject to availability and limits. Must be at least 18. Apple or its trade-in partners reserve the right to refuse or limit any Trade In transaction for any reason. In‑store trade‑in requires presentation of a valid, government-issued photo ID (local law may require saving this information). Sales tax may be assessed on full value of new iPhone. Additional terms from Apple or Apple’s trade-in partners may apply. Monthly pricing: Available to qualified customers and requires 0% APR, 24-month installment loan with Citizens One or Apple Card Monthly Installments and iPhone activation with AT&T, Sprint, T-Mobile, or Verizon. Taxes and shipping not included. Additional Apple Card Monthly Installments terms are in the Customer Agreement. Additional iPhone Payments terms are here.</p>
+<ol class="ul1">
+	<li>All battery claims depend on network configuration and many other factors; actual results will vary. Battery has limited recharge cycles and may eventually need to be replaced by Apple service provider. Battery life and charge cycles vary by use and settings. See apple.com/batteries and apple.com/iphone/battery.html for more information.</li>
+	<li>iPhone 8, iPhone 8 Plus, iPhone XR, iPhone 11 Pro, iPhone 11 Pro Max, and iPhone 11 are splash, water, and dust resistant and were tested under controlled laboratory conditions; iPhone 11 Pro and iPhone 11 Pro Max have a rating of IP68 under IEC standard 60529 (maximum depth of 4 meters up to 30 minutes); iPhone 11 has a rating of IP68 under IEC standard 60529 (maximum depth of 2 meters up to 30 minutes); and iPhone 8, iPhone 8 Plus, and iPhone XR have a rating of IP67 under IEC standard 60529 (maximum depth of 1 meter up to 30 minutes). Splash, water, and dust resistance are not permanent conditions and resistance might decrease as a result of normal wear. Do not attempt to charge a wet iPhone; refer to the user guide for cleaning and drying instructions. Liquid damage not covered under warranty.</li>
+	<li>The display has rounded corners that follow a beautiful curved design, and these corners are within a standard rectangle. When measured as a standard rectangular shape, the screen is 5.85 inches (iPhone 11 Pro), 6.46 inches (iPhone 11 Pro Max), or 6.06 inches (iPhone 11, iPhone XR) diagonally. Actual viewable area is less.</li>
+	<li>Trade-in values may vary, and are based on the condition and model of your trade‑in device. Additional trade‑in values require purchase of a new iPhone, subject to availability and limits. Must be at least 18. Offer may not be available in all stores and not all devices are eligible for credit. Apple or its trade-in partners reserve the right to refuse or limit any Trade In transaction for any reason. In‑store trade‑in requires presentation of a valid, government‑issued photo ID (local law may require saving this information). Sales tax may be assessed on full value of new iPhone. Value of your current device may be applied toward purchase of a new Apple device. Additional terms from Apple or Apple’s trade‑in partners may apply. See apple.com/shop/trade-in for more information.</li>
+	<li>Program available for iPhone 11 and iPhone 11 Pro. Available to qualified customers with a credit check and eligible U.S. credit or debit card. Requires a 24-month installment loan with a 0% APR from Citizens Bank, N.A. (subject to any interest, fees, or other costs payable to the card issuer), purchase of AppleCare+ for iPhone, and iPhone activation with one of these national carriers: AT&T, Sprint, Verizon, or T-Mobile. Sales tax and any applicable fees due at time of purchase. Full terms apply.</li>
+	<li>$4.99/month after free trial. One subscription per Family Sharing group. Offer good for 3 months after eligible device activation. Plan automatically renews until cancelled. Restrictions and other terms apply.</li>
+	<li>$9.99/month after free trial. No commitment. Plan automatically renews after trial until cancelled.</li>
+	<li>New subscribers only. $9.99/month after free trial. No commitment. Plan automatically renews after trial until cancelled.</li>
+</br>
+	<p>NHL and NHL team marks are the property of the NHL and its teams. All Rights Reserved.</p>
+	<p>Officially Licensed Product of United States Women’s National Team Players Association © 2019</p>
+	<p>Officially Licensed Product of NFL Players Inc. © 2019</p>
+</ol>
+</div>
+<div class="footer">
+	
+</div>
+</div>
+</body>
+</html>
